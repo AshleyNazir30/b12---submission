@@ -21,5 +21,5 @@ jobs:
 
       - name: Run script
         env:
-          ACTION_RUN_LINK: https://github.com/YOUR_USERNAME/b12-submission/actions/runs/123456789
+          ACTION_RUN_LINK: https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}
         run: python submit.py
